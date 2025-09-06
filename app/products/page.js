@@ -108,7 +108,7 @@ export default function ProductsPage() {
                   placeholder="Search products..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                  className="pl-10 text-black pr-4 py-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
                 />
               </div>
             </form>
@@ -116,7 +116,7 @@ export default function ProductsPage() {
             {/* Filter Toggle (Mobile) */}
             <button
               onClick={() => setShowFilters(!showFilters)}
-              className="lg:hidden bg-gray-100 px-4 py-3 rounded-lg flex items-center space-x-2 hover:bg-gray-200 transition-colors"
+              className="lg:hidden text-black bg-gray-100 px-4 py-3 rounded-lg flex items-center space-x-2 hover:bg-gray-200 transition-colors"
             >
               <SlidersHorizontal className="h-5 w-5" />
               <span>Filters</span>

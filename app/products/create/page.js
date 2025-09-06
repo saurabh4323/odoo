@@ -148,7 +148,7 @@ export default function CreateProductPage() {
                   required
                   value={formData.title}
                   onChange={handleChange}
-                  className="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                  className="pl-10 text-black pr-4 py-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
                   placeholder="Enter product title"
                 />
               </div>
@@ -168,7 +168,7 @@ export default function CreateProductPage() {
                   rows={4}
                   value={formData.description}
                   onChange={handleChange}
-                  className="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all resize-none"
+                  className="pl-10 text-black pr-4 py-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all resize-none"
                   placeholder="Describe your product..."
                 />
               </div>
@@ -192,7 +192,7 @@ export default function CreateProductPage() {
                     required
                     value={formData.price}
                     onChange={handleChange}
-                    className="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                    className="pl-10 text-black pr-4 py-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
                     placeholder="0.00"
                   />
                 </div>
@@ -211,7 +211,7 @@ export default function CreateProductPage() {
                     required
                     value={formData.category}
                     onChange={handleChange}
-                    className="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all appearance-none"
+                    className="pl-10 text-black pr-4 py-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all appearance-none"
                   >
                     {categories.map((category) => (
                       <option key={category} value={category}>
@@ -236,7 +236,7 @@ export default function CreateProductPage() {
                   type="url"
                   value={formData.image}
                   onChange={handleChange}
-                  className="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                  className="pl-10 text-black pr-4 py-3 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
                   placeholder="https://example.com/image.jpg"
                 />
               </div>
