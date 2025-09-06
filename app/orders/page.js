@@ -127,7 +127,7 @@ export default function OrdersPage() {
           <div className="bg-white rounded-xl shadow-md p-12 text-center">
             <Package className="h-24 w-24 text-gray-400 mx-auto mb-6" />
             <h2 className="text-2xl font-bold text-gray-600 mb-4">No Orders Yet</h2>
-            <p className="text-gray-500 mb-8">You haven't placed any orders yet. Start shopping to see your orders here!</p>
+            <p className="text-gray-500 mb-8">You have not placed any orders yet. Start shopping to see your orders here!</p>
             <Link
               href="/products"
               className="bg-gradient-to-r from-orange-500 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-orange-600 hover:to-purple-700 transition-all inline-flex items-center space-x-2"
