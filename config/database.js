@@ -1,13 +1,24 @@
 import mongoose from "mongoose";
 
+let isConnected = false;
+
 const connectdb = async () => {
-  const url =
-    "mongodb+srv://saurabhiitr01:y9ch5DAFNnxL3UmS@cluster0.di8qtqg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+  if (isConnected) {
+    console.log("✅ Using existing MongoDB connection");
+    return;
+  }
+
   try {
-    mongoose.connect(url);
-    console.log("Database connected");
+    const db = await mongoose.connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+
+    isConnected = db.connections[0].readyState === 1;
+    console.log("✅ Database connected");
   } catch (error) {
-    console.log("Database notconnected", error);
+    console.error("❌ Database connection failed:", error);
+    throw error;
   }
 };
 
